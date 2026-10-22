@@ -71,7 +71,10 @@ export default function App() {
             }}
             onPress={() => setCorAtual(cor)}
           >
-            <Text style={{ fontSize: 32, textAlign: "center" }}>
+            <Text style={{ fontSize: 32, textAlign: "center", color: cor === "#000000" ? "#FFFFFF" : "#000000"
+              
+            }}>
+              
               {cor === corAtual ? "X" : ""}
             </Text>
           </TouchableOpacity>
